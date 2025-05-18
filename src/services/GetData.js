@@ -38,8 +38,6 @@ export const searchCharacter = async (searchTerm) => {
     }
     
     const data = await response.json();
-    console.log("data", data);
-
     return data;
   } catch (error) {
     console.error('Error fetching characters:', error);
@@ -77,7 +75,6 @@ export const getLocations = async (page = 1) => {
   try {
     const response = await fetch(`${BASE_URL}/location?page=${page}`);
     const data = await response.json();
-    console.log("data", data);
     return {
       locations: data.results,
       info: data.info
