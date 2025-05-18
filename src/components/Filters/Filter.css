@@ -1,0 +1,18 @@
+.inputSearchMovil{
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    border-color: #4D9242 !important;
+    border-width: 2px;
+}
+.inputSearchDesktop{
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    border-color: #4D9242 !important;
+    border-width: 2px;
+}
+.selects{
+    border-color: #4D9242 !important;
+    border-width: 2px;
+}

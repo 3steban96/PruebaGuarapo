@@ -1,0 +1,111 @@
+.cardStyle {
+  position: relative;
+  border-radius: 50px !important;
+  overflow: hidden;
+  background-image: url('../../assets/portal.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+}
+
+.cardStyle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4); 
+  backdrop-filter: blur(10px); 
+  z-index: 0;
+  
+}
+
+.cardStyle .card-body,
+.cardStyle .titleLicence {
+  position: relative;
+  z-index: 1;
+}
+
+.character-img {
+  border: 4px solid #4D9242;
+  border-radius: 90px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.titleLicence {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+@font-face {
+  font-family: 'Rick Morty'; 
+  src: url('../../assets/fonts/get_schwifty.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fontRickMorty {
+    font-family: 'Rick Morty';
+    font-size: 40px;
+    color: #21321f;
+}
+.titleLicence h1 {
+  color: #000000;
+  font-weight: bold;
+}
+.barcode-container {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.1), 0 2px 10px rgba(0,0,0,0.1);
+  position: relative;
+  width: 100%;
+}
+
+.barcode {
+  width:auto;
+  height: 50px;
+  background: repeating-linear-gradient(
+    90deg,
+    #000 0px,
+    #000 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  position: relative;
+}
+
+.barcode::before {
+  content: attr(data-content);
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #111;
+}
+.containerEpisodes{
+    border-radius: 50px !important;
+}
+.episode-list {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.episode-card {
+  background-color: #f4f4f4;
+  border-left: 4px solid #4D9242;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.episode-card:hover {
+  transform: scale(1.02);
+  background-color: #e6ffe6;
+}
+

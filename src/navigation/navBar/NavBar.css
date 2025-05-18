@@ -1,0 +1,7 @@
+.activeNav {
+    font-weight: bold;
+    color: #4D9242; 
+    border-bottom: 3px solid #4D9242;
+    background-color: transparent;
+    border-radius: 0; 
+}
