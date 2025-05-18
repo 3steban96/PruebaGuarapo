@@ -1,7 +1,19 @@
-.activeNav {
+.nav-link.activeNav {
     font-weight: bold;
-    color: #4D9242; 
+    color: #4D9242 !important; 
     border-bottom: 3px solid #4D9242;
     background-color: transparent;
     border-radius: 0; 
+    padding-bottom: 0.5rem;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4D9242;
 }
