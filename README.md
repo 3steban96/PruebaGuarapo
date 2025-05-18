@@ -1,12 +1,76 @@
-# React + Vite
+# Rick & Morty
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a technical test for the role Frontend React for the company Guarapo Labs.
 
-Currently, two official plugins are available:
+<pre> 
+rickMorty/ 
+├── src/ 
+│ ├── assets/ # Static resources (images, fonts) 
+│ ├── components/ # Reusable components 
+│ ├── navigation/ # Navigation components 
+│ ├── pages/ # Main views/pages 
+│ └── services/ # API and service logic
+</pre>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧠 Architecture Overview
+🧩 Pattern
+Component-based architecture following React principles.
 
-## Expanding the ESLint configuration
+Modular and scalable structure for maintainability.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🧱 Main Layers
+🖼️ Presentation
+UI components stored in /components
+
+Main views/pages in /pages
+
+Styled using React Bootstrap
+
+🔀 Navigation
+Managed using React Router DOM
+
+Navigation logic inside /navigation
+
+🔌 Services
+API calls centralized in services/GetData.js
+
+Data fetched from the Rick & Morty API
+
+🧰 Design Patterns Used
+Container/Presentational Pattern
+e.g., separation between layout and logic in components like Card
+
+Custom Hooks Pattern
+For managing state and side effects in a reusable way
+
+Composition Pattern
+Nesting of components to build flexible UIs
+
+⚙️ State Management
+Local state handled with useState and useEffect
+
+Data passed via props drilling
+
+🌟 Features
+✅ Modular and reusable components
+
+✅ Clear separation of concerns
+
+✅ Atomic component design
+
+✅ Responsive and mobile-friendly UI
+
+✅ Centralized error handling for data fetching
+
+🧪 Technologies Used
+React
+
+React Router DOM
+
+React Bootstrap
+
+Axios (or Fetch, depending on your implementation)
+
+Rick and Morty API
+
+
