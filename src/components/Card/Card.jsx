@@ -5,6 +5,7 @@ import Spinner from 'react-bootstrap/Spinner';
 import Button from 'react-bootstrap/Button';
 import { getAllCharacters } from '../../services/GetData';
 import { useNavigate } from 'react-router-dom';
+import './Card.css'
 export default function CardCharacter({ characters: searchResults }) {
   const [characters, setCharacters] = useState([]);
   const [page, setPage] = useState(1);
@@ -49,8 +50,8 @@ export default function CardCharacter({ characters: searchResults }) {
     <>
       {characters.map((character) => (
         <Col xs={12} sm={6} md={4} lg={3} key={character.id} className='mb-4 '>
-          <Card className='h-100' onClick={() => selectCharacter(character.id)}>
-            <Card.Img variant="top" src={character.image} />
+          <Card className='h-100 shadow' onClick={() => selectCharacter(character.id)}>
+            <Card.Img  src={character.image} />
             <Card.Body>
               <Card.Title>{character.name}</Card.Title>
               <Card.Text>
@@ -62,7 +63,7 @@ export default function CardCharacter({ characters: searchResults }) {
       ))}
       {info.next && !loading && (
         <div className="d-flex justify-content-center w-100 mb-4">
-          <Button variant="primary" onClick={loadMore}>
+          <Button onClick={loadMore} className='shadow btnLoadMore'>
             Load More
           </Button>
         </div>

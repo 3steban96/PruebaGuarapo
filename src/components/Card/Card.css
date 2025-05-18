@@ -1,0 +1,13 @@
+.btnLoadMore {
+    background-color: rgb(241, 241, 241) !important;
+    border-color: none !important;
+    border-width: 0px !important;
+    color: #62b4f6 !important;
+    font-weight: bold !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    transition: box-shadow 0.3s ease !important;
+}
+
+.btnLoadMore:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3) !important;
+}

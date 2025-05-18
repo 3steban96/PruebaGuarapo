@@ -56,7 +56,7 @@ export default function Filters({ onSearchResults }) {
       } else if (!gender && !species && !status) {
         onSearchResults(null);
       }
-    }, 1000);
+    }, 400);
 
     return () => clearTimeout(bounceTimeout);
   }, [searchTerm, onSearchResults]);

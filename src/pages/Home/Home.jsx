@@ -18,7 +18,7 @@ export default function Home() {
     <div >
       <Header />
       <Filters onSearchResults={handleSearchResults} />
-      <Container fluid className='mt-5'>
+      <Container fluid className='mt-5 ps-5 pe-5'>
         <Row className=' ms-2 me-2'>
             <CardCharacter characters={filteredCharacters}/>
         </Row>
